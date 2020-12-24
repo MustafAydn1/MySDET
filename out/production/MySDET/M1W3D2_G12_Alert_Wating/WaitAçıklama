@@ -1,0 +1,50 @@
+ Selenium Bekletme Konusu:
+          Thread.sleep : bu selenium a özel değil, java ya ait yazılımın herhangi bir yerinde verilen süre kadar bekler.
+
+           Implicit wait :
+           Tüm sayfadaki elemanalr için bir bekleme süresi atanıyor.Ancak eleman bulunduğu anda daha fazla beklemiyor.
+           Bütüm elemanlar geçerli.NoSuchElement hatası nı vermek için verilen süre kadar  eleman bulunana kadar bekler.
+
+                        driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+                        driver.manage().timeouts().implicitlyWait(30, TimeUnit.MINUTES)
+
+           pageLoadTimeout :
+           driver.manage().timeouts().pageLoadTimeout(30,TimeUnit.SECONDS)
+           30 sn süresinde sayfanın yüklenmesini bekliyor, bu süreden sonra timeout düşerek hata verir.
+           driver.get() de  driver.navigate.To
+
+     Seleniumdaki bekletme komutları
+
+         Thread.sleep tavsiye edilen bir bekleme komutu değildir.
+
+         Implicit(Üstü kapalı) Wait ve Explicit(Belirgin) Wait
+
+         Implicit Wait her komuta belirli bir zaman tanır.
+
+         Explicit Wait spesifik bir komut için belirli bir süre tanır.
+
+
+    Implicit Wait:Örtülü Bekleme
+    explicit : açık
+
+
+
+             İnterview Sorusu :  Implicit ve Explicit
+
+             Implicit : Bir kere tanımlanır. Tüm sayfadaki Bütüm elemanlar geçerli bir bekleme süresi atanıyor.
+                        Ancak eleman bulunduğu anda daha fazla beklemiyor.
+                        NoSuchElement hatasını vermek için verilen süre kadar  eleman bulunana kadar bekler.
+
+             Explicit : Tek bir eleman özel Kriter olarak tanımlanır sadece ilgili elemanda geçerli olur
+                       ExpectedConditions
+                                         .titleIs -> title bu olana kadar bekle
+                                         .titleContains -> title ın da bu kelime geçene kadar bekle
+                                         .visibilityOfTheElement -> eleman gözükene kadar bekle
+                                         .elementToBeClickable -> eleman tıklanabilir olana kadra bekle
+                                         .elementToBeSelected -> eleman seçilebilir olana kadra bekle
+                                         .alertIsPresent()  -> alert çıkana kadar bekle.
+                                         .textToBe -> elemanda verilen txt gözükene kadar bekle.
+                                         .InvisibilityOfTheElement -> eleman kaybolana kadar bekle
+
+             Her ikisi tanımlı ise : önce Implicit kullanılır, ve üzerine Explicit in süresi eklenerek
+                                      toplam hata sınır süresi ortaya çıkmış olur.

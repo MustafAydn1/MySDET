@@ -1,0 +1,10 @@
+M1W1D4_G4_findElements.Extra.findElements_links.... spanın içindeki attributeleri vermedi...
+
+--------------------------------------------------------------------------------------------------------------------------
+ M1W1D4_G4_findElements;
+// demek ki birşeyin text ini alacagımız zaman id ile de alabiliriz... BEN YANLIŞ ANLAMIŞIM...
+//SORU::  Css DE  a tagı dışında text ile arama yapılamaz...Css de a tagı dışındaki  textler alınamaz mı???
+
+// SORU:: xpath de tum tagların texleri ile arama mı yapabiliyoruz.Tum tagların textlerini alamak için mi xpath kullanıyoruz???
+
+--------------------------------------------------------------------------------------------------------------------------
