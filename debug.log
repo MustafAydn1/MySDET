@@ -1,0 +1,5 @@
+[1224/151759.112:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
+[1224/161516.297:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
+[1226/184417.170:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
+[1226/185054.744:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
+[1227/154440.379:ERROR:directory_reader_win.cc(43)] FindFirstFile: Sistem belirtilen yolu bulamýyor. (0x3)
