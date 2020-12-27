@@ -46,6 +46,7 @@ public class _2_EkranKaydet extends BaseStaticDriver {
 
             // 3.Aşama ekranDosyasını bir dosyaya yazma/kopyalama işlemi yapılıyor.
             // DosyaKopyala (ekranDosyası, ekranGoruntusu.png);
+            //BURADA EKRAN FOTOSUNU RESİM DOSYASI OLARAK KAYDETTİRECEZ.AMA,
             // Yukarıdaki komut JAVA nın için de yok, bunun için diğer yapılmış bir kütüphane
             // bulup AYNI SELENYUMU eklediğimiz ekleyeceğiz. bu kütüphane common.io bu apache isimli siteden indirilecek.
 
@@ -72,10 +73,11 @@ public class _2_EkranKaydet extends BaseStaticDriver {
 
 
 
-//2. ders 10. dak.
-//apache  nedir?...  web sunucusu,  serbest yazılım platformu...
+//2. ders 10. dak. önemli
+//apacheapache nedir? 17. gun 10. dak....  web sunucusu,  serbest yazılım platformu...
+//websayfasının bıze sunumunu saglıyor.
 
-
+//
 //https://mvnrepository.com/artifact/commons-io/commons-io/2.7 // bu libs i indirdiğim yer.
 
         //Assert.assertEquals("Admin",isimyeri); // Admin yazması gerekirken Linda yazdı.

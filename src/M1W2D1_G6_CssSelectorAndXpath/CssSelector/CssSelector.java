@@ -56,19 +56,23 @@ selectByIndex() ise 0 dan başlayarak yerleştiriyor.
 
 
 
-driver.findElement(By.name("u_Llc_89597")).sendKeys("ne var ne yok...");
-driver.findElement(By.id("u_Llc_14597")).sendKeys("11.01.1999");
+driver.findElement(By.xpath("//*[@id=\"u_fQz_89597\"]")).sendKeys("ne var ne yok...");
+driver.findElement(By.xpath("//*[@id=\"u_fQz_14597\"]")).sendKeys("11.01.1999");
 
-        WebElement ulke=driver.findElement(By.xpath("(//select[starts-with(@name,'u_Llc')])[3]"));
+        WebElement ulke=driver.findElement(By.xpath("//*[@id=\"u_fQz_14598\"]"));
         Select slc=new Select(ulke);
         slc.getOptions();
         int random=(int)(Math.random()*slc.getOptions().size()+2);
 
         slc.selectByIndex(random);
 
+        driver.findElement(By.xpath("//*[@id=\"f\"]/div[4]/input")).click();
+        driver.findElement(By.xpath("//div/div[2]/form[2]/input[2]")).click();
 
 
-Thread.sleep(5000);
+
+
+Thread.sleep(50000);
 driver.quit();
 
     }

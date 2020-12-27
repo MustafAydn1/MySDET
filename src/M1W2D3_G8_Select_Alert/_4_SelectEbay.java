@@ -39,7 +39,7 @@ public class _4_SelectEbay  extends BaseStaticDriver {
 
 
 
-        Thread.sleep(600000);
+        Thread.sleep(60000);
         driver.quit();
 
 

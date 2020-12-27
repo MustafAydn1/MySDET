@@ -13,6 +13,8 @@ public class findingByClassName_3 {
         System.setProperty("webdriver.chrome.driver","drivers\\chromedriver.exe");
 
         WebDriver driver= new ChromeDriver();
+        driver.manage().window().maximize();
+
         driver.get("http://www.practiceselenium.com/");
 
         WebElement c=driver.findElement(By.className("editor_collections"));

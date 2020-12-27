@@ -4,6 +4,7 @@ import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import utils.BaseStaticDriver;
+
 /*
 Test Senaryo
         1- http://www.practiceselenium.com git

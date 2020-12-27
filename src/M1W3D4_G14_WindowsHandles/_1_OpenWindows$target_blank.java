@@ -17,6 +17,7 @@ public class _1_OpenWindows$target_blank extends BaseStaticDriver {
 
         // Sayfada yeni pencere açan linkleri bulmak için target=_blank attribute olan a (link) tagleri bulundu.
         List<WebElement> linkler=driver.findElements(By.cssSelector("a[target='_blank']"));
+        // sadece a yazarak da dene bakalım.
 
         for (WebElement link: linkler) {
 

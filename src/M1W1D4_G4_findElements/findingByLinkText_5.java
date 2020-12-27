@@ -12,6 +12,7 @@ public class findingByLinkText_5 extends BaseStaticDriver {
         driver.get("http://www.practiceselenium.com/");
 
         WebElement l=driver.findElement(By.linkText("Check Out"));//Sadece a nın içinde arayacagız...Başka yerde değil..
+
         System.out.println(l.getAttribute("data-url")); // buraya hangi attrıbute yi yazarsan onun = karşılıgı console cıkar
 
 //Text i Check Out olan  yerdeki(a tagındaki) data-url (keyinin) adlı attribute nin degerini yazdır.
@@ -19,7 +20,7 @@ public class findingByLinkText_5 extends BaseStaticDriver {
 
         Thread.sleep(1000);
 
-        driver.quit();
+       // driver.quit();
 
 
 
